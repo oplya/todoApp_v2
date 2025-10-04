@@ -1,0 +1,26 @@
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #d3dae6;
+  background-color: #ffffff;
+  color: #1e2a38;
+  max-width: 500px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.todo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.todoText {
+  width: 100%;
+  text-align: left;
+}
+.todoIcon {
+  font-size: 1.5rem;
+  margin-right: 12px;
+  color: #0d9b8c;
+}
