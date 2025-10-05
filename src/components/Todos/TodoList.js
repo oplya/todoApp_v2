@@ -1,16 +1,16 @@
 import Todo from './Todo'
 import styles from './TodoList.module.css'
 
-function TodoList({ todos, deleteTodo }) {
+function TodoList({ todos, deleteTodo, toggleTodo }) {
   return (
     <div className={styles.todoListContainer}>
       {!todos.length && <h2>TodoList is empty</h2>}
-      {todos.map((todo, index) => (
+      {todos.map((todo) => (
         <Todo
-          key={index}
+          key={todo.id}
           todo={todo}
-          index={index}
           deleteTodo={deleteTodo}
+          toggleTodo={toggleTodo}
         />
       ))}
     </div>
