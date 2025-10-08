@@ -2,10 +2,10 @@
 Trying to get the best result.
 
 
-<ul>Changelog:
-  <li>
+<h4>Changelog:</h4>
+  <ul>
     [08.10.25]
-    + adaptive layout
-    + custom favicons
-  </li>
-</ul>
+   <br> + adaptive layout
+   <br> + custom favicons
+  </ul>
+
