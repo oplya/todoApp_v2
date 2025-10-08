@@ -2,7 +2,7 @@
   "name": "todo_list",
   "version": "0.2.0",
   "private": true,
-  "homepage": "/oplya/todoApp_v2",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
