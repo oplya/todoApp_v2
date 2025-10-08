@@ -2,5 +2,12 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .todoListContainer {
+    gap: 10px;
+  }
 }
