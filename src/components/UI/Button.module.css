@@ -1,24 +1,26 @@
 .button {
-  margin-left: 15px;
+  margin-left: 10px;
   height: 44px;
-  padding: 0 20px;
+  padding: 0 22px;
   cursor: pointer;
-  background-color: #0d9b8c;
+  background: linear-gradient(135deg, #0d4f8b, #1c7ed6);
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
   border: none;
-  border-radius: 8px;
-  transition: background-color 0.2s;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(28, 126, 214, 0.3);
+  transition: all 0.3s ease;
 }
-
 .button:hover {
-  background-color: #0b857c;
+  background: linear-gradient(135deg, #1c7ed6, #0aa1dd);
+  box-shadow: 0 6px 18px rgba(28, 126, 214, 0.5);
+  transform: translateY(-2px);
 }
-
 .button:disabled {
   cursor: not-allowed;
-  background-color: #cccccc;
-  color: #666666;
-  opacity: 0.6;
+  background: #b0b8c2;
+  color: #f0f0f0;
+  box-shadow: none;
+  opacity: 0.7;
 }
