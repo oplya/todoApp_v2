@@ -8,4 +8,3 @@ A simple Todo app
    <br> + adaptive layout
    <br> + custom favicons
   </ul>
-
