@@ -1,5 +1,5 @@
 # todoApp_v2
-Trying to get the best result.
+A simple Todo app
 
 
 <h4>Changelog:</h4>
