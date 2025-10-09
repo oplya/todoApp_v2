@@ -23,6 +23,25 @@
   border-color: #0d4f8b;
   box-shadow: 0 0 6px rgba(13, 79, 139, 0.3);
 }
+.warning {
+  text-align: center;
+  color: #d9534f;
+  font-size: 0.9rem;
+  font-weight: 500;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 600px) {
   .todoFormContainer input {
     width: 30%;

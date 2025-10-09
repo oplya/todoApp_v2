@@ -1,9 +1,9 @@
 .todoListContainer {
-  padding: 10px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
   align-items: center;
+  gap: 10px;
 }
 
 @media (max-width: 600px) {

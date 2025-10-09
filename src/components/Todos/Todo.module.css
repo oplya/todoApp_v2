@@ -52,6 +52,84 @@
   color: #ff4757;
   transform: scale(1.2);
 }
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.modalContent {
+  background-color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  animation: slideUp 0.25s ease-in-out;
+}
+
+.modalContent h3 {
+  margin-bottom: 10px;
+  color: #0d4f8b;
+  font-size: 1.2rem;
+}
+
+.modalContent p {
+  margin-bottom: 10px;
+  color: #1e2a38;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.closeButton {
+  background: linear-gradient(135deg, #0d4f8b, #1c7ed6);
+  color: #ffffff;
+  border: none;
+  padding: 10px 10px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.closeButton:hover {
+  background: linear-gradient(135deg, #1c7ed6, #0aa1dd);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 600px) {
   .todo {
     max-width: 100%;
