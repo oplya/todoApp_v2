@@ -1,6 +1,4 @@
 # todoApp_v2
-A simple Todo app
-
 
 <h4>Changelog:</h4>
   <ul>
