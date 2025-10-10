@@ -12,3 +12,12 @@
    <br> + text limiting for the tasks
    <br> + a modal window for tasks with a large number of characters
   </ul>
+
+  <ul>
+    [10.10.25]
+   <br> + saving to localstorage
+   <br> + offline mode for Desktop
+  </ul>
+
+Featuring:
+offline mode for Mobile devices
