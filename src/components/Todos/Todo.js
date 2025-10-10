@@ -10,6 +10,8 @@ function Todo({ todo, deleteTodo, toggleTodo }) {
   const shortText =
     todo.text.length > limit ? `${todo.text.slice(0, limit)}...` : todo.text
 
+  const shouldShowPointer = todo.text.length > limit
+
   return (
     <>
       <div
@@ -19,11 +21,13 @@ function Todo({ todo, deleteTodo, toggleTodo }) {
       >
         <RiTodoFill className={styles.todoIcon} />
         <div
-          className={styles.todoText}
+          className={`${styles.todoText} ${
+            shouldShowPointer ? styles.clickableText : styles.nonClickableText
+          }`}
           onClick={() => {
             if (todo.text.length > limit) setModalOpen(true)
           }}
-          title={todo.text.length > limit ? 'Показать полностью' : ''}
+          title={todo.text.length > limit ? 'Show in full' : ''}
         >
           {shortText}
         </div>
@@ -46,13 +50,13 @@ function Todo({ todo, deleteTodo, toggleTodo }) {
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
           >
-            <h3>Полный текст задачи</h3>
+            <h3>Full text</h3>
             <p>{todo.text}</p>
             <button
               className={styles.closeButton}
               onClick={() => setModalOpen(false)}
             >
-              Закрыть
+              Close
             </button>
           </div>
         </div>

@@ -18,12 +18,12 @@ function TodoForm({ addTodo }) {
     const value = event.target.value
 
     if (value.length > 150) {
-      setWarning('Максимум 150 символов')
+      setWarning('Text limit is 150')
       return
     }
 
     if (value.length > 130) {
-      setWarning(`Осталось ${150 - value.length} символов`)
+      setWarning(`${150 - value.length} characters remaining`)
     } else {
       setWarning('')
     }
